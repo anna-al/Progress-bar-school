@@ -1,0 +1,9 @@
+.ProgressBar_borders{
+    background-color: #FFFFFF;
+    border: 1px solid #4682B4;
+}
+
+.ProgressBar_borders_radius{
+    border-radius: 8px;
+}
+
