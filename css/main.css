@@ -1,1 +1,7 @@
 /* Main stylesheet */
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    background-color: antiquewhite;
+}
