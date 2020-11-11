@@ -7,6 +7,7 @@ for (const Predmet of PredmetItem) {
     } else {
         Predmet.classList.add('ProgressBar_background-color_yellow');  
     }
+    console.log(Predmet.textContent);
 }
 //PredmetItem.classList.toggle('ProgressBar_background-color_yellow');
 
