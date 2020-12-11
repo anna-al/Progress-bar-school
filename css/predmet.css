@@ -2,13 +2,13 @@
 параметры оформления для учебных предметов
 */
 
-.klass-underline{
+.underline{
     border-bottom: 2px solid black;
 }
 
 .predmet {
     padding-left: 1%;
-    border-bottom: 2px solid black;
+    padding-right: 1%;
 }
 
 .finished{

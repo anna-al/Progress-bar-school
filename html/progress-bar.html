@@ -17,65 +17,92 @@
     <main class="">
         <select class='childSelect' name='childName'>
             <option value='andrei'>Андрей</option>        
-            <option value='victor'>Виктор</option>
+            <option value='victor' selected>Виктор</option>
         </select>
-        <section class='victor hidden'>
-        <h1>Виктор</h1>
-        <label>
-            <input type="radio" name="victor_schoollClass" value="4" checked> 4й класс
-        </label>
-        <label>
-            <input type="radio" name="victor_schoollClass" value="3"> 3й класс
-        </label>
-        <section class='victor4'>
-        <h3>4й класс</h3>
-        <div class="predmet inProgress">
-            <p>
-                ИНФОРМАТИКА
-            </p>
-            <p>начат: 10/12/2020 - </p>
-            <div class="ProgressBar_borders ProgressBar_borders_radius ProgressBar_background-color_white">
-                <div class="ProgressBar ProgressBar_background-color_yellowgreen ProgressBar_borders_radius 
-                    ProgressBar_width_4">
-                    1/22
-                </div>
-            </div>
-            <p> Итоговый тест: 15/10/2020 (10/10 5,00 из 5,00 (100%))</p>
-        </div>
+        <select class='klassSelect' name='childName'>
+            <option value='klass1'>1 класс</option>        
+            <option value='klass2'>2 класс</option>        
+            <option value='klass3'>3 класс</option>        
+            <option value='klass4' selected>4 класс</option>
+        </select>
 
-        </section>
-        <section class='victor3'>
-        <h3 class='klass-underline'>3й класс</h3>
-            <div class="predmet finished">
-                <p>
-                    РУССКИЙ ЯЗЫК
-                </p>
-                <p>начат: 03/10/2020 - 12/10/2020</p>
-                <div class="ProgressBar_borders ProgressBar_borders_radius ProgressBar_background-color_white">
-                    <div class="ProgressBar ProgressBar_background-color_yellowgreen ProgressBar_borders_radius 
-                        ProgressBar_width_100">
-                        100(100)
+        <section class='victor'>
+            <h1>Виктор</h1>
+            <section class='klass klass4'>
+                <h3 class='underline'>4й класс</h3>
+                <div class="predmet underline">
+                    <p>
+                        ИНФОРМАТИКА
+                    </p>
+                    <p>
+                        начат: 10/12/2020 - 
+                    </p>
+                    <div class="ProgressBar_borders ProgressBar_borders_radius ProgressBar_background-color_white">
+                        <div class="ProgressBar ProgressBar_background-color_yellowgreen ProgressBar_borders_radius 
+                            ProgressBar_width_4">
+                            1/22
+                        </div>
                     </div>
+                    <p> Итоговый тест:
+                        15/10/2020 (10/10 5,00 из 5,00 (100%))
+                    </p>
                 </div>
-                <p> Итоговый тест: 15/10/2020 (10/10 5,00 из 5,00 (100%))</p>
-            </div>
-            <div class="predmet">
-                <p>
-                    ЛИТЕРАТУРНОЕ ЧТЕНИЕ
-                </p>
-                <p>начат: 00/10/2010 - 21/10/2020 -</p>
-                <div class="ProgressBar_borders ProgressBar_borders_radius ProgressBar_background-color_white">
-                    <div class="ProgressBar ProgressBar_background-color_yellow ProgressBar_borders_radius 
-                        ProgressBar_width_51">
-                        51(100)
+
+            </section>
+            <section class='klass klass3'>
+                <h3 class='underline'>3й класс</h3>
+                <div class="predmet underline">
+                    <p>
+                        ЛИТЕРАТУРНОЕ ЧТЕНИЕ
+                    </p>
+                    <p>начат: 03/10/2020 - 12/10/2020</p>
+                    <div class="ProgressBar_borders ProgressBar_borders_radius ProgressBar_background-color_white">
+                        <div class="ProgressBar ProgressBar_background-color_yellowgreen ProgressBar_borders_radius 
+                            ProgressBar_width_100">
+                            100(100)
+                        </div>
                     </div>
+                    <p> Итоговый тест: 15/10/2020 (10/10 5,00 из 5,00 (100%))</p>
                 </div>
-                <p> Итоговый тест:</p>
-            </div>
-        </section>
-        <section class='andrei'>
-            <p>Андрей</p>
-        </section>
+                <div class="predmet underline">
+                    <p>
+                        ЛИТЕРАТУРНОЕ ЧТЕНИЕ
+                    </p>
+                    <p>начат: 00/10/2010 - 21/10/2020 -</p>
+                    <div class="ProgressBar_borders ProgressBar_borders_radius ProgressBar_background-color_white">
+                        <div class="ProgressBar ProgressBar_background-color_yellow ProgressBar_borders_radius 
+                            ProgressBar_width_51">
+                            51(100)
+                        </div>
+                    </div>
+                    <p> Итоговый тест:</p>
+                </div>
+            </section>
+        </section>    
+        <section class='andrei hidden'>
+            <h1>Андрей</h1>
+            <section class='klass klass1'>
+                <h3 class='underline'>1й класс</h3>
+                <div class="predmet underline">
+                    <p>
+                        какойто предмет
+                    </p>
+                    <p>
+                        начат: 10/12/2020 - 
+                    </p>
+                    <div class="ProgressBar_borders ProgressBar_borders_radius ProgressBar_background-color_white">
+                        <div class="ProgressBar ProgressBar_background-color_yellowgreen ProgressBar_borders_radius 
+                            ProgressBar_width_4">
+                            1/22
+                        </div>
+                    </div>
+                    <p> Итоговый тест:
+                        15/10/2020 (10/10 5,00 из 5,00 (100%))
+                    </p>
+                </div>
+
+            </section>
+        </select>
     </main>
     <script src="../script/hidden.js"></script>
 </body>
