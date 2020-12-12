@@ -1,43 +1,44 @@
 // скрыть элемент
-const childName1 ='andrei';
-const childName2 ='victor';
+const childItems = document.querySelectorAll('.child');
 const selectedChild = document.querySelector('.childSelect');
-const childSelect1 = document.querySelector('.'+childName1);
-const childSelect2 = document.querySelector('.'+childName2);
 
 const klassItems = document.querySelectorAll('.klass');
 const selectedKlass = document.querySelector('.klassSelect');
 
+//console.log(childItems)
 
-console.log('1  '+ selectedChild.value);
-console.log('11  ');
-console.log(childSelect1);
-console.log(klassItems);
+//применяю стартовые значения принудительно чтобы всегда работало
+// ******** в разработке *************
+//console.log(selectedChild.value)
+//for (const child of childItems) {
+    //child.classList.add('hidden');
+//}
+//const visibleChild = document.querySelector('.'+selectedChild.value);
+//visibleChild.classList.remove('hidden');
+//*****закончила выставлять стартовые значения
 
+//обработчик выбора ребенка
 
 selectedChild.onchange = function () {
-    if (selectedChild.value === childName1) {
-        childSelect1.classList.remove('hidden');
-        childSelect2.classList.add('hidden');
+    for (const child of childItems) {
+        child.classList.add('hidden');
     }
-    if (selectedChild.value === childName2) {
-        childSelect2.classList.remove('hidden');
-        childSelect1.classList.add('hidden');
-    
-    }
+    const visibleChild = document.querySelector('.'+selectedChild.value);
+    visibleChild.classList.remove('hidden');
 }
 
+//обработчик выбора класса
 selectedKlass.onchange = function () {
-    console.log("2  ");    
-    console.log("2  "+selectedKlass.value);
+//    console.log("2  ");    
+//    console.log("2  "+selectedKlass.value);
     for (const klass of klassItems) {
-        console.log(klass);
+//        console.log(klass);
         klass.classList.add('hidden');
     }
     const visibleKlasses = document.querySelectorAll('.'+selectedKlass.value);
     for (const visibleKlass of visibleKlasses) {
-        console.log('');
-        console.log(visibleKlass);
+//        console.log('');
+//        console.log(visibleKlass);
         visibleKlass.classList.remove('hidden');
     }
 }
