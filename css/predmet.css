@@ -1,0 +1,16 @@
+/*
+параметры оформления для учебных предметов
+*/
+
+.underline{
+    border-bottom: 2px solid black;
+}
+
+.predmet {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.finished{
+    color: grey;
+}
