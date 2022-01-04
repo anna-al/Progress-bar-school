@@ -36,6 +36,27 @@ selectedChild.onchange = function () {
     }
     const visibleChild = document.querySelector('.'+selectedChild.value);
     visibleChild.classList.remove('hidden');
+    // отображаюй выбранный класс ребенка
+    // первый ребенок
+    {
+        for (const klass1 of klassItems) {
+            klass1.classList.add('hidden');
+        }
+        const visibleKlasses1 = document.querySelectorAll('.'+selectedKlass1.value);
+        for (const visibleKlass1 of visibleKlasses1) {
+            visibleKlass1.classList.remove('hidden');
+        }
+    }    
+    // второй ребенок
+    {
+        for (const klass2 of klassItems) {
+            klass2.classList.add('hidden');
+        }
+        const visibleKlasses2 = document.querySelectorAll('.'+selectedKlass2.value);
+        for (const visibleKlass2 of visibleKlasses2) {
+            visibleKlass2.classList.remove('hidden');
+        }
+    }
 }
 
 //обработчик выбора класса 1
