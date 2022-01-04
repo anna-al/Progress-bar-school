@@ -2,9 +2,9 @@
 const childItems = document.querySelectorAll('.child');
 const selectedChild = document.querySelector('.childSelect');
 
-const klassItems1 = document.querySelectorAll('.klass1');
+const klassItems1 = document.querySelectorAll('.klassreb1');
 const selectedKlass1 = document.querySelector('.klassSelect1');
-const klassItems2 = document.querySelectorAll('.klass2');
+const klassItems2 = document.querySelectorAll('.klassreb2');
 const selectedKlass2 = document.querySelector('.klassSelect2');
 
 //применяю стартовые значения принудительно чтобы всегда работало
