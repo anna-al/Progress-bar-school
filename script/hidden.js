@@ -8,7 +8,8 @@ const selectedKlass2 = document.querySelector('.klassSelect2');
 
 //применяю стартовые значения принудительно чтобы всегда работало
 const visibleChild0 = document.querySelector('.'+selectedChild.value);
-const visibleKlasses0 = document.querySelectorAll('.'+selectedKlass.value);
+const visibleKlasses01 = document.querySelectorAll('.'+selectedKlass1.value);
+const visibleKlasses02 = document.querySelectorAll('.'+selectedKlass2.value);
 
 //ребенок
 for (const child of childItems) {
@@ -20,7 +21,10 @@ visibleChild0.classList.remove('hidden');
 for (const klass of klassItems) {
     klass.classList.add('hidden');
 }
-for (const visibleKlass of visibleKlasses0) {
+for (const visibleKlass of visibleKlasses01) {
+    visibleKlass.classList.remove('hidden');
+}
+for (const visibleKlass of visibleKlasses02) {
     visibleKlass.classList.remove('hidden');
 }
 //*****закончила выставлять стартовые значения
