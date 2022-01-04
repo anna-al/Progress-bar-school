@@ -3,7 +3,8 @@ const childItems = document.querySelectorAll('.child');
 const selectedChild = document.querySelector('.childSelect');
 
 const klassItems = document.querySelectorAll('.klass');
-const selectedKlass = document.querySelector('.klassSelect');
+const selectedKlass1 = document.querySelector('.klassSelect1');
+const selectedKlass2 = document.querySelector('.klassSelect2');
 
 //применяю стартовые значения принудительно чтобы всегда работало
 const visibleChild0 = document.querySelector('.'+selectedChild.value);
@@ -33,8 +34,19 @@ selectedChild.onchange = function () {
     visibleChild.classList.remove('hidden');
 }
 
-//обработчик выбора класса
-selectedKlass.onchange = function () {
+//обработчик выбора класса 1
+selectedKlass1.onchange = function () {
+    for (const klass of klassItems) {
+        klass.classList.add('hidden');
+    }
+    const visibleKlasses = document.querySelectorAll('.'+selectedKlass.value);
+    for (const visibleKlass of visibleKlasses) {
+        visibleKlass.classList.remove('hidden');
+    }
+}
+
+//обработчик выбора класса 2
+selectedKlass2.onchange = function () {
     for (const klass of klassItems) {
         klass.classList.add('hidden');
     }
