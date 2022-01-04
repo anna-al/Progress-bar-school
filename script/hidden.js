@@ -2,8 +2,9 @@
 const childItems = document.querySelectorAll('.child');
 const selectedChild = document.querySelector('.childSelect');
 
-const klassItems = document.querySelectorAll('.klass');
+const klassItems1 = document.querySelectorAll('.klass1');
 const selectedKlass1 = document.querySelector('.klassSelect1');
+const klassItems2 = document.querySelectorAll('.klass2');
 const selectedKlass2 = document.querySelector('.klassSelect2');
 
 //применяю стартовые значения принудительно чтобы всегда работало
@@ -18,11 +19,14 @@ for (const child of childItems) {
 visibleChild0.classList.remove('hidden');
 
 //класс
-for (const klass of klassItems) {
+for (const klass of klassItems1) {
     klass.classList.add('hidden');
 }
 for (const visibleKlass of visibleKlasses01) {
     visibleKlass.classList.remove('hidden');
+}
+for (const klass of klassItems2) {
+    klass.classList.add('hidden');
 }
 for (const visibleKlass of visibleKlasses02) {
     visibleKlass.classList.remove('hidden');
@@ -39,7 +43,7 @@ selectedChild.onchange = function () {
     // отображаюй выбранный класс ребенка
     // первый ребенок
     {
-        for (const klass1 of klassItems) {
+        for (const klass1 of klassItems1) {
             klass1.classList.add('hidden');
         }
         const visibleKlasses1 = document.querySelectorAll('.'+selectedKlass1.value);
@@ -49,7 +53,7 @@ selectedChild.onchange = function () {
     }    
     // второй ребенок
     {
-        for (const klass2 of klassItems) {
+        for (const klass2 of klassItems2) {
             klass2.classList.add('hidden');
         }
         const visibleKlasses2 = document.querySelectorAll('.'+selectedKlass2.value);
@@ -61,7 +65,7 @@ selectedChild.onchange = function () {
 
 //обработчик выбора класса 1
 selectedKlass1.onchange = function () {
-    for (const klass1 of klassItems) {
+    for (const klass1 of klassItems1) {
         klass1.classList.add('hidden');
     }
     const visibleKlasses1 = document.querySelectorAll('.'+selectedKlass1.value);
@@ -72,7 +76,7 @@ selectedKlass1.onchange = function () {
 
 //обработчик выбора класса 2
 selectedKlass2.onchange = function () {
-    for (const klass2 of klassItems) {
+    for (const klass2 of klassItems2) {
         klass2.classList.add('hidden');
     }
     const visibleKlasses2 = document.querySelectorAll('.'+selectedKlass2.value);
